@@ -16,4 +16,3 @@ To execute the program: run the file in Android Studio
 
 # TUTORIAL CREDIT
 * [Tutorial credit](https://www.facebook.com/AndroidMasterAcademy/?_rdc=1&_rdr)
-
