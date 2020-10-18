@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
-                    //Toast.makeText(getApplicationContext(), "TYPE VALUE", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "TYPE VALUE", Toast.LENGTH_SHORT).show();
                     focusedViewId = v.getId();
                     ((EditText) findViewById(focusedViewId)).addTextChangedListener(textWatcher);
 
