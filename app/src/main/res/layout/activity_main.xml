@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="@drawable/background_design"
+    tools:context=".MainActivity"
+    tools:ignore="UseCompoundDrawables">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Number System Converter"
+        android:textColor="@android:color/white"
+        android:typeface="monospace"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/app_logo"
+                android:src="@drawable/main_icon2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="15dp"
+                android:typeface="monospace"
+                android:text="Decimal"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/editTextDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:background="@drawable/inputview_design"
+                android:drawableLeft="@drawable/decimal_icon_design"
+                style="@style/myEditTextStyle"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="15dp"
+                android:text="Binary"
+                android:textColor="@android:color/white"
+                android:typeface="monospace"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextBinary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:digits="01"
+                android:inputType="number"
+                android:background="@drawable/inputview_design2"
+                android:drawableLeft="@drawable/binary_icon_design"
+                style="@style/myEditTextStyle"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="15dp"
+                android:text="Hex Value"
+                android:textColor="@android:color/white"
+                android:typeface="monospace"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextHex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:digits="0123456789abcdefABCDEF"
+                android:background="@drawable/inputview_design3"
+                android:drawableLeft="@drawable/hex_icon_design"
+                style="@style/myEditTextStyle"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"
+                android:textAllCaps="true"
+                android:typeface="monospace"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_design"
+                style="@style/myEditTextStyle"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

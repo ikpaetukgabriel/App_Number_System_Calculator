@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Number System Calculator</string>
+    <string name="number_system_converter" tools:ignore="DuplicateDefinition">Number System Converter</string>
+    <string name="todo">TODO</string>
+    <string name="number_converter">Number Converter</string>
+    <string name="app_logo">app logo</string>
+    <string name="clear">clear</string>
+    <string name="number_system">Number System</string>
+    <string name="decimal_number">Decimal Number</string>
+</resources>
